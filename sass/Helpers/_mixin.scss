@@ -1,0 +1,54 @@
+@mixin Img($display,$width,$height) {
+    display: $display;
+    width: $width;
+    height: $height;
+}
+@mixin carouselBg($bg-img){
+    background-image: $bg-img;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+}
+@mixin cinemaCSS {
+    ul{
+        border: none;
+        li{
+            border-bottom: 1px solid $color-gray-0;
+            &:hover{
+                a{
+                    opacity: 1;
+                }
+            }
+            a{
+                border: none;
+                opacity: .5;
+                transition: all .2s;
+            }
+            .nav-link.active{
+                opacity: 1;
+            }
+        }
+    }
+}
+@mixin text($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin ageType($bg) {
+    background-color: $bg;
+    color: $color-white-0;
+    border-radius: 4px;
+    padding: 0 $pd-1;
+    margin-right: $mg-0;
+    font-size: $fs-1;
+    text-align: center;
+}
+
+@mixin positionCenter(){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

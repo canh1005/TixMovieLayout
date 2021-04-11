@@ -1,0 +1,44 @@
+.carousel__content{
+    cursor: pointer;
+    &:hover{
+        .play__video{
+            opacity: 1;
+        }
+    }
+    .mov1{
+        @include carouselBg(url("../../img/dong-gia-1k-ve-khi-mua-ve-qua-tix-16021321724224.jpg"));
+    }
+    .mov2{
+        @include carouselBg(url("../../img/cuc-no-hoa-cuc-cung-pawn-p-16021265927768.png"));
+    }
+    .mov3{
+        @include carouselBg(url("../../img/tiec-trang-mau-blood-moon-party-16021267739246.png"));
+    }
+    .mov4{
+        @include carouselBg(url("../../img/gia-dinh-chan-to-phieu-luu-ky-bigfoot-family-p-16021269560594.png"));
+    }
+    .mov5{
+        @include carouselBg(url("../../img/rom-c18-16008300686919.png"));
+    }
+    .play__video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: none;
+        background: none;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .5s;
+        &:hover{
+            img{
+                opacity: .7;
+            }
+        }
+    }
+}
+@media screen and (max-width: 812px){
+    .carousel{
+        display: none!important;
+    }
+}

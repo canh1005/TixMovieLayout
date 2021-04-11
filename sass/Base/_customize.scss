@@ -1,0 +1,35 @@
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    span{
+        @include text($color-gray-1,150px,$fw-normal);
+    }
+    &:hover{
+        background: none!important;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.owl-next{
+    left: unset;
+    right: 2%;
+}
+.owl-dots{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    
+    .owl-dot{
+        overflow: hidden;
+        &:focus{
+            outline: none;
+        }
+    }
+    .owl-dot.active{
+        span{
+            background-color: $color-orange-0!important;
+        }
+    }
+}

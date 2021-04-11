@@ -1,0 +1,102 @@
+.cinema{
+    background-image: url("../../img/back-news.png");
+    background-repeat: no-repeat;
+    padding-top: $pd-3;
+    margin-top: $mg-3;
+}
+.cinema__content{
+    
+    .cinema__logo{
+        border-right: 1px solid $color-gray-0;
+        img{
+            @include Img(block,40px,40px);
+        }
+        @include cinemaCSS();
+    }
+    .cinema__details{
+        img{
+            @include Img(inline-block,60px,60px);
+            margin-right: $mg-1;
+        }
+    }
+    .cinema__location{
+        border-right: 1px solid $color-gray-0 !important;
+        @include cinemaCSS();
+        ul{
+            li{
+                border: none;
+                a{
+                    border-bottom: 1px solid $color-gray-0;
+                    display: flex;
+                }
+                a.active{
+                    background: transparent;
+                }
+            }
+        }
+        .location__description{
+            span:first-child{
+                @include text($color-green-0,$fs-2,$fw-bold-0);
+            }
+            p{
+                @include text($color-gray-1,$fs-1,$fw-normal);
+                margin: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            p:last-child{
+                @include text($color-orange-0,$fs-1,$fw-bold-0);
+            }
+        }
+    }
+    .warpMovie{
+        padding: $pd-2;
+        border-bottom: 1px solid $color-gray-0;
+    }
+    .cinema__film{
+        .movie__info{
+            display: flex; 
+        }
+        .C18{
+            @include ageType($color-orange-0);
+        }
+        .P{
+            @include ageType($color-green-1);
+        }
+        .movie__description{
+            p{
+                margin: 0;
+            }
+            p:last-child{
+                @include text($color-gray-1,$fs-1,$fw-normal);
+            }
+        }
+        .list__time{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                border: 1px solid $color-gray-2;
+                margin: 0 $mg-0;
+                padding: $pd-0;
+                text-align: center;
+                border-radius: 7px;
+                @include text($color-gray-1,$fs-2,$fw-bold-1);
+                &:hover{
+                    .start__time{
+                        @include text($color-orange-0,$fs-3,$fw-bold-2);
+                    }
+                }
+            }
+            .start__time{
+                @include text($color-green-2,$fs-3,$fw-bold-2);
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    .cinema{
+        display: none;
+    }
+}

@@ -1,0 +1,129 @@
+.movie__list{
+    position: relative;
+    .tool__block{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        z-index: 1;
+        padding: $pd-2;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: $color-white-0;
+    }
+    .small__block{
+        border-right: 1px solid $color-gray-0;
+        padding: $pd-0;
+    }
+    button{
+        border: none;
+        background-color: transparent;
+    }
+    span{
+        padding-right: $pd-4 + 10px;
+    }
+    .phim{
+        padding-right: $pd-3 + 80px;
+    }
+    .muaVe{
+        background-color: $color-black-1;
+        border-radius: 5px;
+        padding: $pd-1 $pd-4;
+        margin-left: $mg-0;
+        @include text($color-white-0,$fs-0,unset);
+        text-transform: uppercase;
+    }
+    .movie__block{
+        padding-top: 75px;
+        #movieListNav{
+            margin-bottom: $mg-5;
+            border: none;
+            .nav-link{
+                border: none;
+                @include text($color-black-2,$fs-4,$fw-normal);
+                transition: all .2s;
+                &:hover{
+                    transform: scale(1.1,1.1);
+                }
+            }
+            .nav-link.active{
+                color: $color-orange-1;
+            }
+        }    
+        #movieListTabContent{
+            cursor: pointer;
+            img{
+                @include Img(block,100%,unset);
+                border-radius: 4px;
+            }
+            .C18{
+                @include ageType($color-orange-0);
+            }
+            .P{
+                @include ageType($color-green-1);
+            }
+            .filmThumbnail{
+                position: relative;
+            }
+            .play__video{
+                position: absolute;
+                @include positionCenter();
+                @include Img(block,50px,50px);
+                visibility: hidden;
+                opacity: 0;
+                transition: all .2s;
+            }
+            .filmName{
+                @include text($color-black-0,$fs-0,$fw-normal);
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .movieTime{
+                @include text($color-black-1,$fs-1 + 1,unset);
+                margin-top: $mg-1 + 5;
+                margin-bottom: $mg-0 + 3;
+            }
+            .info{
+                position: relative;
+            }
+            .filmInfo:hover{
+                .play__video{
+                    visibility: visible;
+                    opacity: 1;
+                }
+                .hideHover{
+                    visibility: hidden;
+                    opacity: 0;
+                }
+                button{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            button{
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: 1px solid $color-orange-0;
+                background-color: $color-orange-0;
+                border-radius: 5px;
+                @include text($color-white-0,$fs-3,unset);
+                display: block;
+                width: 100%;
+                padding: $pd-0;
+                margin-top: $mg-0;
+                visibility: hidden;
+                opacity: 0;
+                transition: all .2s;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 992px){
+    .tool__block,.info{
+        display: none!important;
+    }
+}

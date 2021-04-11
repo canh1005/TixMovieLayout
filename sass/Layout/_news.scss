@@ -1,0 +1,97 @@
+.news{
+    background-image: url("../../img/back-news.png");
+    background-repeat: no-repeat;
+}
+.news__details{
+    margin-top: $mg-3;
+    padding-top: $pd-3;
+    .news__menu{
+        ul{
+            border: none;
+            li{
+                .nav-link{
+                    border: none;
+                    @include text($color-black-0,$fs-4,$fw-bold);
+                    transition: all .5s;
+                    &:hover{
+                        transform: scale(1.1,1.1);
+                    }
+                }
+                .nav-link.active{
+                    @include text($color-orange-1,$fs-4,$fw-bold);
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .news__content{
+        .top__content{
+            margin-bottom: $mg-2;
+        }
+        a{
+            text-decoration: none;
+            @include text($color-black-0,$fs-0,$fw-bold-0);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all .5s;
+            &:hover{
+                @include text($color-orange-0,$fs-0,$fw-bold-0);
+            }
+        }
+        p{
+            @include text($color-black-1,$fs-1 + 1,$fw-normal);
+            text-align: justify;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: $mg-1 + 5;
+        }
+        .comment__like{
+            display: flex;
+            .like{
+                margin-right: $mg-3;
+            }
+        }
+        .newsthumbNail{
+            img{
+                @include Img(block,60px,60px);
+                margin-right: $mg-0;
+            }
+            a{
+                display: flex;
+                align-items: center;
+            }
+            span{
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        
+    }
+    button{
+        display: block;
+        margin: auto;
+        margin-top: $mg-4;
+        margin-bottom: $mg-2;
+        border: 1px solid $color-gray-1;
+        border-radius: 4px;
+        text-align: center;
+        padding: $pd-0 + 2 $pd-4;
+        @include text($color-gray-1,$fs-2,$fw-normal);
+        transition: all .5s;
+        &:hover{
+            background-color: $color-orange-0;
+            color: $color-white-0;
+        }
+    }
+}
+@media screen and (max-width: 575px){
+    .news__menu{
+        ul{
+            li{
+                a{
+                    @include text($color-black-0,$fs-3!important,$fw-normal!important);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIX - Đặt Vé Nhanh Nhất / Trang chủ </title>
+    <!-- BS4 css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- MAGNIFIC POPUP CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <!-- MAIN css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <div class="header__content">
+                <nav class="navbar navbar-expand-md navbar-light d-flex">
+                    <a class="navbar-brand flex-fill" href="#"><img src="./img/web-logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto tix__menu flex-fill">
+                                <li class="d-md-none nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-user-circle"></i>
+                                        <span>Đăng nhập</span><span> ></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Lịch Chiếu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Cụm Rạp</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tin Tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ứng Dụng</a>
+                                </li>
+                        </ul>
+                        <div class="d-sm-none d-md-block d-flex justify-content-center align-items-center login">
+                            <i class="far fa-user-circle"></i>
+                            <span>Đăng nhập</span>
+                        </div>
+                        <div class="nav-item dropdown d-flex justify-content-center align-items-center location">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Hồ Chí Minh
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+                              <a class="dropdown-item" href="#">Hà Nội</a>
+                              <a class="dropdown-item" href="#">Đà Nẵng</a>
+                            </div>
+                          </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- CAROUSEL -->
+    <section class="carousel">
+        <div class="carousel__content owl-carousel owl-theme">
+            <div class="carousel__item mov1">
+            </div>
+            <div class="carousel__item mov2">
+                <a class="play__video" title="abc" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+            </div>
+            <div class="carousel__item mov3">
+                <a class="play__video" href="https://www.youtube.com/embed/Vgb1uUmpQNU"><img src="./img/play-video.png" alt=""></a>
+            </div>
+            <div class="carousel__item mov4">
+                <button class="play__video"><img src="./img/play-video.png" alt=""></button>
+            </div>
+            <div class="carousel__item mov5">
+                <button class="play__video"><img src="./img/play-video.png" alt=""></button>
+            </div>
+        </div>
+    </section>
+    <!-- DANH SÁCH PHIM -->
+    <section class="container movie__list">
+        <div class="container">
+            <div class="container tool__block">
+                <div class="small__block dropdown">
+                    <button class="dropdown-toggle" type="button" id="phim" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="phim">Phim</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="phim">
+                      <button class="dropdown-item" type="button">Cục nợ hóa cục cưng</button>
+                      <button class="dropdown-item" type="button">Tiệc trăng máu</button>
+                      <button class="dropdown-item" type="button">Gia đình chân to</button>
+                    </div>
+                </div>
+                <div class="small__block dropdown">
+                    <button class="dropdown-toggle" type="button" id="rap" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span>Rạp</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="rap">
+                      <button class="dropdown-item" type="button">BHD</button>
+                      <button class="dropdown-item" type="button">Lotte</button>
+                      <button class="dropdown-item" type="button">Beta Cinephex</button>
+                    </div>
+                </div>
+                <div class="small__block dropdown">
+                    <button class="dropdown-toggle" type="button" id="lich" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span>Ngày xem</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="lich">
+                      <button class="dropdown-item" type="button"></button>
+                      <button class="dropdown-item" type="button"></button>
+                      <button class="dropdown-item" type="button"></button>
+                    </div>
+                </div>
+                <div class="small__block dropdown">
+                    <button class="dropdown-toggle" type="button" id="suat__chieu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span>Suất chiếu</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="suat__chieu">
+                      <button class="dropdown-item" type="button"></button>
+                      <button class="dropdown-item" type="button"></button>
+                      <button class="dropdown-item" type="button"></button>
+                    </div>
+                </div>
+                <button class="muaVe">Mua vé ngay</button>
+            </div>
+            <div class="movie__block">
+                <ul class="nav nav-tabs justify-content-center" id="movieListNav" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#phimdangChieu" role="tab" aria-controls="home" aria-selected="true">Đang Chiếu</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#phimsapChieu" role="tab" aria-controls="profile" aria-selected="false">Sắp Chiếu</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="movieListTabContent">
+                    <div class="tab-pane fade show active " id="phimdangChieu" role="tabpanel">
+                        <div class="dangChieu owl-carousel owl-theme">
+                            <div class=" row ">
+                                <div class="col-12 col-lg-3 filmInfo">
+                                    <div class="filmThumbnail">
+                                        <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                        <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="movieName hideHover">
+                                            <span class="P">P</span>
+                                            <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                        </div>
+                                        <div class="movieTime hideHover">113 phút</div>
+                                        <button class="buyNow">MUA VÉ</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 filmInfo">
+                                    <div class="filmThumbnail">
+                                        <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                        <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="movieName hideHover">
+                                            <span class="P">P</span>
+                                            <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                        </div>
+                                        <div class="movieTime hideHover">113 phút</div>
+                                        <button class="buyNow">MUA VÉ</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 filmInfo">
+                                    <div class="filmThumbnail">
+                                        <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                        <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="movieName hideHover">
+                                            <span class="P">P</span>
+                                            <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                        </div>
+                                        <div class="movieTime hideHover">113 phút</div>
+                                        <button class="buyNow">MUA VÉ</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 filmInfo">
+                                    <div class="filmThumbnail">
+                                        <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                        <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="movieName hideHover">
+                                            <span class="P">P</span>
+                                            <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                        </div>
+                                        <div class="movieTime hideHover">113 phút</div>
+                                        <button class="buyNow">MUA VÉ</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 filmInfo">
+                                    <div class="filmThumbnail">
+                                        <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                        <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="movieName hideHover">
+                                            <span class="P">P</span>
+                                            <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                        </div>
+                                        <div class="movieTime hideHover">113 phút</div>
+                                        <button class="buyNow">MUA VÉ</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 filmInfo">
+                                    <div class="filmThumbnail">
+                                        <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                        <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="movieName hideHover">
+                                            <span class="P">P</span>
+                                            <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                        </div>
+                                        <div class="movieTime hideHover">113 phút</div>
+                                        <button class="buyNow">MUA VÉ</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 filmInfo">
+                                    <div class="filmThumbnail">
+                                        <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                        <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="movieName hideHover">
+                                            <span class="P">P</span>
+                                            <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                        </div>
+                                        <div class="movieTime hideHover">113 phút</div>
+                                        <button class="buyNow">MUA VÉ</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-3 filmInfo">
+                                    <div class="filmThumbnail">
+                                        <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                        <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                    </div>
+                                    <div class="info">
+                                        <div class="movieName hideHover">
+                                            <span class="P">P</span>
+                                            <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                        </div>
+                                        <div class="movieTime hideHover">113 phút</div>
+                                        <button class="buyNow">MUA VÉ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="phimsapChieu" role="tabpanel">
+                        <div class="row">
+                            <div class="col-3 filmInfo">
+                                <div class="filmThumbnail">
+                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                    <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="movieName hideHover">
+                                        <span class="P">P</span>
+                                        <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                    </div>
+                                    <div class="movieTime hideHover">113 phút</div>
+                                    <button class="buyNow">MUA VÉ</button>
+                                </div>
+                                
+                            </div>
+                            <div class="col-3 filmInfo">
+                                <div class="filmThumbnail">
+                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                    <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="movieName hideHover">
+                                        <span class="P">P</span>
+                                        <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                    </div>
+                                    <div class="movieTime hideHover">113 phút</div>
+                                    <button class="buyNow">MUA VÉ</button>
+                                </div>
+                                
+                            </div>
+                            <div class="col-3 filmInfo">
+                                <div class="filmThumbnail">
+                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                    <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="movieName hideHover">
+                                        <span class="P">P</span>
+                                        <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                    </div>
+                                    <div class="movieTime hideHover">113 phút</div>
+                                    <button class="buyNow">MUA VÉ</button>
+                                </div>
+                                
+                            </div>
+                            <div class="col-3 filmInfo">
+                                <div class="filmThumbnail">
+                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                    <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="movieName hideHover">
+                                        <span class="P">P</span>
+                                        <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                    </div>
+                                    <div class="movieTime hideHover">113 phút</div>
+                                    <button class="buyNow">MUA VÉ</button>
+                                </div>
+                                
+                            </div>
+                            <div class="col-3 filmInfo">
+                                <div class="filmThumbnail">
+                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                    <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="movieName hideHover">
+                                        <span class="P">P</span>
+                                        <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                    </div>
+                                    <div class="movieTime hideHover">113 phút</div>
+                                    <button class="buyNow">MUA VÉ</button>
+                                </div>
+                                
+                            </div>
+                            <div class="col-3 filmInfo">
+                                <div class="filmThumbnail">
+                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                    <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="movieName hideHover">
+                                        <span class="P">P</span>
+                                        <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                    </div>
+                                    <div class="movieTime hideHover">113 phút</div>
+                                    <button class="buyNow">MUA VÉ</button>
+                                </div>
+                                
+                            </div>
+                            <div class="col-3 filmInfo">
+                                <div class="filmThumbnail">
+                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                    <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="movieName hideHover">
+                                        <span class="P">P</span>
+                                        <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                    </div>
+                                    <div class="movieTime hideHover">113 phút</div>
+                                    <button class="buyNow">MUA VÉ</button>
+                                </div>
+                                
+                            </div>
+                            <div class="col-3 filmInfo">
+                                <div class="filmThumbnail">
+                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn-215x318.png" alt="">
+                                    <a class="play__video" href="https://www.youtube.com/embed/mukpuMI4eSw"><img src="./img/play-video.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="movieName hideHover">
+                                        <span class="P">P</span>
+                                        <span class="filmName">Cục nợ hóa cục cưng - Pawn P</span>
+                                    </div>
+                                    <div class="movieTime hideHover">113 phút</div>
+                                    <button class="buyNow">MUA VÉ</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- CỤM RẠP -->
+    <section class="container cinema">
+        <div class="row border cinema__content">
+            <div class="col-1 cinema__logo">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#BHD"><img src="./img/BHD_cinema.png" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#dcine"><img src="./img/dcine.jpg" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#dongda"><img  src="./img/DongDaCimena.png" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#lotte"><img  src="./img/lotte_cinema.png" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#mega"><img  src="./img/mega_cinema.png" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#star"><img src="./img/star_cinema.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- cinema location and movie infomation -->
+            <div class="col-11 cinema__details">
+                <!--  -->
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="BHD">
+                        <div class="row">
+                            <!-- cinema location infomation -->
+                            <div class="col-5 cinema__location">
+                                <!-- Nav tabs -->
+                                <ul class="row nav nav-tabs">
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#bitexco">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-bitexco.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Bitexco</span>
+                                                <p>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vincom">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-thao-dien-15379553942188.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom Thảo Điền</span>
+                                                <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vinmax">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-3-2.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom 3/2</span>
+                                                <p>L5-Vincom 3/2, 3C Đường 3/2, Q.10</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- cinema movie information-->
+                            <div class="col-7 cinema__film">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane container active" id="bitexco">
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/rom-c18.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="C18">C18</span><span> Ròm</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="P">P</span><span> Cục nợ hóa cục cưng</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">17:00</span><span>~ 19:00</span></a>
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="vincom">
+                                        Không có suất chiếu
+                                    </div>
+                                    <div class="tab-pane container fade" id="vinmax">
+                                        Không có suất chiếu
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="dcine">
+                        <div class="row">
+                            <div class="col-5 cinema__location">
+                                <!-- Nav tabs -->
+                                <ul class="row nav nav-tabs">
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#dcine1">
+                                            <div class="location__img">
+                                                <img src="./img/lotte-cinema-ha-dong-15234406380466.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>DCine</span><span>- Bitexco</span>
+                                                <p>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#dcine2">
+                                            <div class="location__img">
+                                                <img src="./img/lotte-cinema-landmark-15383883136609.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>DCine</span><span>- Vincom Thảo Điền</span>
+                                                <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#dcine3">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-3-2.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>DCine</span><span>- Vincom 3/2</span>
+                                                <p>L5-Vincom 3/2, 3C Đường 3/2, Q.10</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-7 cinema__film">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane container active" id="dcine2">
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/rom-c18.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="C18">C18</span><span> Ròm</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="P">P</span><span> Cục nợ hóa cục cưng</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">17:00</span><span>~ 19:00</span></a>
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="dcine1">
+                                        Không có suất chiếu
+                                    </div>
+                                    <div class="tab-pane container fade" id="dcine3">
+                                        Không có suất chiếu
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="dongda">
+                        <div class="row">
+                            <div class="col-5 cinema__location">
+                                <!-- Nav tabs -->
+                                <ul class="row nav nav-tabs">
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#bitexco">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-bitexco.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Bitexco</span>
+                                                <p>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vincom">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-thao-dien-15379553942188.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom Thảo Điền</span>
+                                                <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vinmax">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-3-2.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom 3/2</span>
+                                                <p>L5-Vincom 3/2, 3C Đường 3/2, Q.10</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-7 cinema__film">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane container active" id="bitexco">
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/rom-c18.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="C18">C18</span><span> Ròm</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="P">P</span><span> Cục nợ hóa cục cưng</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">17:00</span><span>~ 19:00</span></a>
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="vincom">
+                                        def
+                                    </div>
+                                    <div class="tab-pane container fade" id="vinmax">
+                                        ght
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="lotte">
+                        <div class="row">
+                            <div class="col-5 cinema__location">
+                                <!-- Nav tabs -->
+                                <ul class="row nav nav-tabs">
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#bitexco">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-bitexco.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Bitexco</span>
+                                                <p>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vincom">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-thao-dien-15379553942188.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom Thảo Điền</span>
+                                                <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vinmax">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-3-2.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom 3/2</span>
+                                                <p>L5-Vincom 3/2, 3C Đường 3/2, Q.10</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-7 cinema__film">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane container active" id="bitexco">
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/rom-c18.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="C18">C18</span><span> Ròm</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="P">P</span><span> Cục nợ hóa cục cưng</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">17:00</span><span>~ 19:00</span></a>
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="vincom">
+                                        def
+                                    </div>
+                                    <div class="tab-pane container fade" id="vinmax">
+                                        ght
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="mega">
+                        <div class="row">
+                            <div class="col-5 cinema__location">
+                                <!-- Nav tabs -->
+                                <ul class="row nav nav-tabs">
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#bitexco">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-bitexco.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Bitexco</span>
+                                                <p>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vincom">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-thao-dien-15379553942188.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom Thảo Điền</span>
+                                                <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vinmax">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-3-2.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom 3/2</span>
+                                                <p>L5-Vincom 3/2, 3C Đường 3/2, Q.10</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-7 cinema__film">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane container active" id="bitexco">
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/rom-c18.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="C18">C18</span><span> Ròm</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="P">P</span><span> Cục nợ hóa cục cưng</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">17:00</span><span>~ 19:00</span></a>
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="vincom">
+                                        def
+                                    </div>
+                                    <div class="tab-pane container fade" id="vinmax">
+                                        ght
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="star">
+                        <div class="row">
+                            <div class="col-5 cinema__location">
+                                <!-- Nav tabs -->
+                                <ul class="row nav nav-tabs">
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#bitexco">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-bitexco.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Bitexco</span>
+                                                <p>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vincom">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-thao-dien-15379553942188.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom Thảo Điền</span>
+                                                <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-12 nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#vinmax">
+                                            <div class="location__img">
+                                                <img src="./img/bhd-star-vincom-3-2.jpg" alt="">
+                                            </div>
+                                            <div class="location__description">
+                                                <span>BHD Star</span><span>- Vincom 3/2</span>
+                                                <p>L5-Vincom 3/2, 3C Đường 3/2, Q.10</p>
+                                                <p>[Chi Tiết]</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-7 cinema__film">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane container active" id="bitexco">
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/rom-c18.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="C18">C18</span><span> Ròm</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="warpMovie">
+                                            <div class="movie__info">
+                                                <div class="movie__img">
+                                                    <img src="./img/cuc-no-hoa-cuc-cung-pawn.png" alt="">
+                                                </div>
+                                                <div class="movie__description">
+                                                    <p><span class="P">P</span><span> Cục nợ hóa cục cưng</span></p>
+                                                    <p>91 phút - TIX 7.9 - IMDb 0</p>
+                                                </div>
+                                            </div>
+                                            <div class="list__time">
+                                                <div class="type">2D Digital</div>
+                                                <div class=" time">
+                                                    <a href="#"><span class="start__time">17:00</span><span>~ 19:00</span></a>
+                                                    <a href="#"><span class="start__time">18:00</span><span>~ 20:00</span></a>
+                                                    <a href="#"><span class="start__time">19:00</span><span>~ 21:00</span></a>
+                                                    <a href="#"><span class="start__time">20:00</span><span>~ 22:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                    <a href="#"><span class="start__time">22:00</span><span>~ 24:00</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="vincom">
+                                        def
+                                    </div>
+                                    <div class="tab-pane container fade" id="vinmax">
+                                        ght
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TIN TỨC -->
+    <section class="news">
+        <div class="container news__details">
+            <div class="news__menu">
+                <!-- Nav tabs -->
+                <ul class="row nav nav-tabs justify-content-center">
+                    <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#dienanh24h">Điện Ảnh 24h</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#discount">Khuyến Mãi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news__content">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="dienanh24h">
+                        <div class="row top__content">
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="./img/news_img1.png" alt="">
+                                <h4><a href="#">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h4>
+                                <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay </p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="./img/news_img2.png" alt="">
+                                <h4><a href="#">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h4>
+                                <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bottom__content">
+                            <div class="col-12 col-md-4">
+                                <img class="img-fluid" src="./img/news_img2.png" alt="">
+                                <h4><a href="#">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h4>
+                                <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <img class="img-fluid" src="./img/news_img2.png" alt="">
+                                <h4><a href="#">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h4>
+                                <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 newsthumbNail">
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/news_img3.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/gai-gia-lam-chieu-v-nhung-cuoc-doi-vuong-gia-15965999321682.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/american-sniper-chinh-nghia-hay-phi-nghia-15905660338111.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="review">
+                        <div class="row top__content">
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="./img/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt="">
+                                <h4><a href="#">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h4>
+                                <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay </p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="./img/review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket-15965255784224.png" alt="">
+                                <h4><a href="#">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h4>
+                                <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bottom__content">
+                            <div class="col-12 col-md-4">
+                                <img class="img-fluid" src="./img/review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket-15965255784224.png" alt="">
+                                <h4><a href="#">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h4>
+                                <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <img class="img-fluid" src="./img/news_img2.png" alt="">
+                                <h4><a href="#">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h4>
+                                <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 newsthumbNail">
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/news_img3.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/news_img3.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/news_img3.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/news_img3.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="discount">
+                        <div class="row top__content">
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="./img/news_img1.png" alt="">
+                                <h4><a href="#">[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a></h4>
+                                <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay </p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="./img/news_img2.png" alt="">
+                                <h4><a href="#">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h4>
+                                <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bottom__content">
+                            <div class="col-12 col-md-4">
+                                <img class="img-fluid" src="./img/news_img2.png" alt="">
+                                <h4><a href="#">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h4>
+                                <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <img class="img-fluid" src="./img/news_img2.png" alt="">
+                                <h4><a href="#">Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</a></h4>
+                                <p>Vượt mặt Peninsula, Ác Quỷ Đối Đầu trở thành phim ăn khách nhất mùa hè 2020 tại Hàn Quốc. Chỉ sau 12 ngày, Ác Quỷ Đối Đầu chạm điểm hoà vốn với 3.5 triệu lượt xem. Ác Quỷ Đối Đầu giữ vững vị trí top 1 doanh thu 2 tuần liên tiếp tại quê nhà Hàn Quốc</p>
+                                <div class="comment__like">
+                                    <div class="like">
+                                        <span><i class="far fa-thumbs-up"></i></span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="comment">
+                                        <span><i class="far fa-comment-alt"></i></span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 newsthumbNail">
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/news_img3.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/news_img3.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/news_img3.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="newsthumbNail__info" href="#">
+                                            <img class="img-fluid" src="./img/news_img3.png" alt="">
+                                            <span>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>Xem Thêm</button>
+            
+        </div>
+    </section>
+    <!-- APP -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <h6 class="">TIX</h6>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#">FAQ</a>
+                            <br class="hidenOnMobile">
+                            <a class="hidenOnMobile" href="#">Brand Guidelines</a>
+                            <a class="showOnLargeScreen" href="#">Thỏa thuận sử dụng</a>
+                        </div>
+                        <div class="col-6">
+                            <a class="hidenOnMobile" href="#">Thỏa thuận sử dụng</a>
+                            <br class="hidenOnMobile">
+                            <a href="#">Chính sách bảo mật</a>
+                            <a class="showOnLargeScreen" href="#">Brand Guidelines</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 partner">
+                    <h6>Đối tác</h6>
+                    <div class="row">
+                        <div class="col-2"><a href="#"><img src="./img/partner_img.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img1.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img2.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img3.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img4.jpg" alt=""></a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"><a href="#"><img src="./img/partner_img.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img1.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img2.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img3.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img4.jpg" alt=""></a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"><a href="#"><img src="./img/partner_img.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img1.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img2.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img3.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img4.jpg" alt=""></a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"><a href="#"><img src="./img/partner_img.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img1.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img2.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img3.jpg" alt=""></a></div>
+                        <div class="col-2"><a href="#"><img src="./img/partner_img4.jpg" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="row col-12 col-xl-4">
+                    <div class="col-6 mobile">
+                        <h6>MOBILE APP</h6>
+                        <div class="mobile__logo">
+                            <a href="#"><img src="./img/apple-logo.png" alt=""></a>
+                            <a href="#"><img src="./img/android-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 social">
+                        <h6 class="d-none d-lg-block">SOCIAL</h6>
+                        <div class="social__logo">
+                            <a href="#"><img src="./img/facebook-logo.png" alt=""></a>
+                            <a href="#"><img src="./img/zalo-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__content">
+                <div class="row">
+                    <div class="col-12 col-md-1"><img src="./img/zion-logo.jpg" alt=""></div>
+                    <div class="col-12 col-md-9">
+                        <span>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</span>
+                        <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+                        <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020  do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.</p>
+                        <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                        <p>Email: <span><a id="tix__support" href="#">support@tix.vn</a></span></p>
+                    </div>
+                    <div class="col-12 col-md-2"><a href="#"><img id="chungNhan"src="./img/chungnhan.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- BS4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.dangChieu').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots:false,
+            responsive:{
+                // 0:{
+                //     items:1
+                // },
+                600:{
+                    items:1,
+                    loop:false
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    </script>
+    <!-- MAGNIFIC POP UP VIDEO using IFRAME js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $('.play__video').magnificPopup({
+            type: 'iframe',
+        iframe: {
+            markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                '<div class="mfp-title">Some caption</div>'+
+              '</div>'
+            },
+        // patterns:{
+        //     youtube:{
+        //         index: 'youtube.com/',
+        //         id: 'gtD5boTYRwaJGsUf',
+
+        //     }
+        // },
+        callbacks: {
+            markupParse: function(template, values, item) {
+            values.title = item.el.attr('title');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

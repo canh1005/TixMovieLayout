@@ -1,0 +1,77 @@
+footer{
+    background-color: $color-black-2;
+    color: $color-gray-1;
+    padding: $pd-2 0;
+    h6{
+        @include text($color-white-0,$fs-2,$fw-normal);
+    }
+    .container{
+        a{
+            text-decoration: none;
+            @include text($color-gray-1,$fs-1,$fw-bold-3);
+            &:hover{
+                @include text($color-white-0,$fs-1,$fw-bold-3);
+            }
+        }
+        
+    }
+    .partner{
+        .row{
+            margin-bottom: $mg-1;
+        }
+        img{
+            @include Img(block,35px,35px);
+            border-radius: 50%;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+    .mobile__logo,.social__logo{
+        display: flex;
+        img{
+            @include Img(block,30px,auto);
+            margin: $mg-0;
+        }
+    }
+    hr{
+        margin: $mg-2 0;
+        border-top: 1px solid $color-black-1;
+    }
+    .footer__content{
+         img{
+             @include Img(block,60px,30px);
+             border-radius: 8px;
+         }
+         #chungNhan{
+            @include Img(block,130px,60px);
+         }
+         span,p{
+             @include text($color-white-0,$fs-1,$fw-bold-1);
+         }
+         p{
+             color: $color-gray-1;
+             margin: 0;
+         }
+         #tix__support{
+            @include text($color-orange-0,$fs-1,$fw-normal);
+         }
+    }
+}
+@media screen and (max-width:992px){
+    .partner,.mobile,h6,br,.hidenOnMobile{
+        display: none;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__content{
+        text-align: center;
+        img{
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}

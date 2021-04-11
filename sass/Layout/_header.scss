@@ -1,0 +1,43 @@
+header{
+    color: $color-gray-4;
+    background-color: $color-white-0;
+    display: block;
+    height: 80px;
+    .header{
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        opacity: .9;
+        background-color: $color-white-0;
+    }
+    img{
+        @include Img(block,50px,50px);
+    }
+    .header__content{
+        .tix__menu{
+            .nav-item{
+                a{
+                    @include text($color-black-0,$fs-0,unset);
+                    transition: all .5s;
+                    &:hover{
+                        color: $color-orange-0;
+                    }
+                }
+            }
+        }
+    }
+    .fa-user-circle{
+        font-size: $fs-4 + 6;
+        margin-right: $mg-0;
+    }
+    .login{
+        margin-right: $mg-1;
+        cursor: pointer;
+    }
+    .location{
+        a{
+            color: $color-gray-4;
+            padding-left: $pd-0;
+        }
+    }
+}
